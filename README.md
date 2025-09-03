@@ -1,6 +1,7 @@
 ### Expence tracker project
 
-Этот проект представляет собой отслеживание расходов, идея для разработки была взята с сайта https://roadmap.sh/backend/projects
+Этот проект представляет собой отслеживание расходов, идея для разработки была взята с сайта https://roadmap.sh/backend/projects (ссылка на сам проект: https://roadmap.sh/projects/expense-tracker)
+
 
 ### Установка
 
