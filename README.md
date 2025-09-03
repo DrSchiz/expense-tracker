@@ -7,38 +7,55 @@
 1. Установка go с официального сайта: https://go.dev/doc/install
    
 2. Создание локальной директории и копирование в неё кода проекта:
-   `git clone https://github.com/DrSchiz/expense-tracker`
+
+   ```
+   git clone https://github.com/DrSchiz/expense-tracker
+   ```
    
-3. Далее необходимо выполнить команду `go build` в директории проекта:
-  `go build -o expense-tracker cmd/main.go`
+4. Далее необходимо выполнить команду `go build` в директории проекта:
+
+   ```
+   go build -o expense-tracker cmd/main.go
+   ```
 
 ### Существующие в проекте команды и их флаги:
 
 1. Добавление расхода производится командой add.
 
    Имеет два обязательных флага: `description` - описание расхода, и `amount` - стоимость расхода:
-   `./expense-tracker add --description "Отель" amount 120`
+   
+   ```
+   ./expense-tracker add --description "Отель" amount 120
+   ```
 
-2. Удаление расхода производится командой delete.
+3. Удаление расхода производится командой delete.
 
    Имеет один обязательный флаг: `id` - ID удаляемого расхода:
 
-   `./expense-tracker delete --id 1`
+   ```
+   ./expense-tracker delete --id 1
+   ```
 
-3. Изменение расхода производится командой update.
+5. Изменение расхода производится командой update.
 
    Имеет один обязательный и два необязательных флага: `id` - ID изменяемого расхода, `description` - описание изменяемого расхода, и `amount` - стоимость изменяемого расхода:
 
-   `./expense-tracker update --id 1 --description "Аренда жилья" --amount 400`
+   ```
+   ./expense-tracker update --id 1 --description "Аренда жилья" --amount 400
+   ```
    
-4. Вывод расходов производится командой list.
+7. Вывод расходов производится командой list.
 
    Не имеет флагов:
 
-   `./expense-tracker list`
+   ```
+   ./expense-tracker list
+   ```
    
-6. Вывод суммы расходой производится командой summary.
+9. Вывод суммы расходой производится командой summary.
 
    Имеет один необязательный флаг: `month` - месяц, за который необходимо вывести сумму всех расходов:
    
-   `./expense-tracker summary --month 9`
+   ```
+   ./expense-tracker summary --month 9
+   ```
