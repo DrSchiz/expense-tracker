@@ -26,7 +26,7 @@
    Имеет два обязательных флага: `description` - описание расхода, и `amount` - стоимость расхода:
    
    ```
-   ./expense-tracker add --description "Отель" amount 120
+   ./expense-tracker add --description "Отель" --amount 120
    ```
 
 3. Удаление расхода производится командой delete.
